@@ -1,0 +1,29 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> cracow apartments prediction </h1><br>
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b> distance to city:  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            rooms :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+
+            size : <input type="text", name='c', placeholder="enter 3"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+             <br>
+             <br>
+
+
+               {{ prediction_text }}
+
+
+
+
+
+    </center>
+
+    </body>
+</html>
